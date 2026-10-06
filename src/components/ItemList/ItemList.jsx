@@ -1,19 +1,14 @@
-import { Item } from "../Item/Item";
-import { Link } from "react-router-dom";
-import "./ItemList.css";
+import React from 'react';
+import Item from '../Item/Item'
 
-export const ItemList = ({ products }) => {
-  if (!products.length) {
-    return <p>No hay productos</p>;
-  }
+const ItemList = ({ data }) => {
+    return (
+        <div className='container'>
+            <div className='row justify-content-evenly'>
+                {data.map((i) => (<Item item={i} name={i.name} key={i.id} id={i.id} image={i.img} price={i.price}/>))}
+            </div>
+        </div>
+    )
+}
 
-  return (
-    <div className="products-container">
-      {products.map((product) => (
-        <Link to={`/product/${product.id}`} key={product.id}>
-          <Item {...product} />
-        </Link>
-      ))}
-    </div>
-  );
-};
+export default ItemList
