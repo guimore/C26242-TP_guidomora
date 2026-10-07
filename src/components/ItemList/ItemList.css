@@ -1,8 +1,29 @@
 .products-container {
   margin: 2rem 0;
   display: flex;
-  justify-content: center;
-
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+}
+
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.col {
+  display: flex !important;
+  margin-bottom: 1.5rem !important;
+  padding: 0 0.75rem !important;
+  flex: 0 0 280px !important;        /* ← ancho FIJO de 280px por columna */
+  max-width: 280px !important;
+  justify-content: center !important;
+}
+
+.col > .cardStyle {
+  width: 100% !important;
+  height: 100% !important;
 }

@@ -1,29 +1,49 @@
 footer {
-  margin-top: 4rem;
-
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-
-  padding: 1.5rem 3rem;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
 }
 
-footer p {
-  color: var(--text-secondary);
+.footer-info h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.footer-info p { margin: 0.3rem 0; font-size: 0.95rem; }
+
+.footer-team h4 { font-size: 1.2rem; margin: 1.5rem 0 1rem; }
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-footer .nav-list {
-  gap: 1.5rem;
+.team-card {
+  background: #34495e;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
 }
 
-footer li {
-  transition: 0.25s;
-  cursor: pointer;
+.team-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
-footer li:hover {
-  color: var(--primary);
+.team-card h5 { font-size: 1rem; margin-bottom: 0.2rem; }
+.team-card p { font-size: 0.85rem; color: #bdc3c7; margin-bottom: 0.5rem; }
+.team-card a { color: #3498db; text-decoration: none; font-size: 0.85rem; }
+
+.footer-bottom {
+  border-top: 1px solid #34495e;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
+
+@media (max-width: 480px) {
+  .team-cards { grid-template-columns: 1fr; }
 }

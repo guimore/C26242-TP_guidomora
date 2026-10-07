@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Zapatito Bebé Azul",
-    "description": "Zapatilla tipo lona en azul vibrante con puntera reforzada y cordones elásticos. Ideales para gateo y sus primeros pasos con total seguridad.",
-    "price": 12500,
-    "image": "/img/footware/bebe-azul.jpg",
-    "category": "infantil"
+    "name": "Coca-Cola 500ml",
+    "description": "Bebida gaseosa fría, ideal para acompañar tus snacks.",
+    "price": 1200,
+    "image": "/img/kiosco/coca-cola.jpg",
+    "category": "bebidas"
   },
   {
     "id": 2,
-    "name": "Zapatito Bebé Rosa",
-    "description": "Zapatos estilo Guillermina en color fucsia con detalle de moño. Suela blanda y flexible, perfecta para proteger los pies de tu bebé con delicadeza.",
-    "price": 12500,
-    "image": "/img/footware/bebe-rosa.jpg",
-    "category": "infantil"
+    "name": "Papas Lays Clásicas",
+    "description": "Papas fritas crujientes, sabor original. 150g.",
+    "price": 1800,
+    "image": "/img/kiosco/papas-lays.jpg",
+    "category": "snacks"
   },
   {
     "id": 3,
-    "name": "Sandalia Dama Verano",
-    "description": "Sandalias de tacón alto en cuero texturizado rosa neón. Diseño de plataforma ancha que combina tendencia y estabilidad para salidas nocturnas.",
-    "price": 28900,
-    "image": "/img/footware/sandalia.jpg",
-    "category": "dama"
+    "name": "Chocolate Milka",
+    "description": "Chocolate con leche suizo, 100g.",
+    "price": 2200,
+    "image": "/img/kiosco/chocolate-milka.jpg",
+    "category": "golosinas"
   },
   {
     "id": 4,
-    "name": "Zapato Dama Elegante",
-    "description": "Stilettos clásicos en cuero charolado color borravino. Punta fina y tacón aguja para un look sofisticado de oficina o eventos de gala.",
-    "price": 35000,
-    "image": "/img/footware/zapato-dama.jpg",
-    "category": "dama"
+    "name": "Cigarrillos Marlboro",
+    "description": "Atado de cigarrillos Marlboro Rojo.",
+    "price": 3500,
+    "image": "/img/kiosco/cigarrillos.jpg",
+    "category": "cigarrillos"
   },
   {
     "id": 5,
-    "name": "Zapato Hombre Oxford",
-    "description": "Zapatos Oxford de cuero genuino color suela con acabado artesanal. Un clásico atemporal con cordones encerados para el hombre moderno.",
-    "price": 42000,
-    "image": "/img/footware/zapato-hombre.jpg",
-    "category": "hombre"
+    "name": "Agua Mineral 500ml",
+    "description": "Agua mineral sin gas, bien fría.",
+    "price": 800,
+    "image": "/img/kiosco/agua-mineral.jpg",
+    "category": "bebidas"
   },
   {
     "id": 6,
-    "name": "Zapato Hombre Marrón Premium",
-    "description": "Calzado de vestir en cuero mate color chocolate. Incluye detalles de costura a mano y suela de alta durabilidad, ideales para uso intensivo formal.",
-    "price": 45500,
-    "image": "/img/footware/zapato-hombre-2.jpg",
-    "category": "hombre"
+    "name": "Alfajor Triple",
+    "description": "Alfajor de chocolate relleno con dulce de leche.",
+    "price": 1500,
+    "image": "/img/kiosco/alfajor.jpg",
+    "category": "golosinas"
   }
 ]
