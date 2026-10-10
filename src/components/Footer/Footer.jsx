@@ -3,9 +3,9 @@ import "./Footer.css";
 
 export const Footer = () => {
   const equipo = [
-    { id: 1, nombre: "Guido", rol: "Fundador & Dueño", foto: "https://i.pravatar.cc/150?img=12", linkedin: "#" },
-    { id: 2, nombre: "Belén Romero", rol: "Desarrolladora", foto: "https://i.pravatar.cc/150?img=5", linkedin: "#" },
-    { id: 3, nombre: "Juan Pérez", rol: "Atención al Cliente", foto: "https://i.pravatar.cc/150?img=3", linkedin: "#" }
+    { id: 1, nombre: "Guido Amor", rol: "Fundador & Dueño", foto: "https://i.pravatar.cc/150?img=12", linkedin: "#" },
+    { id: 2, nombre: "Maria Campos", rol: "Desarrolladora", foto: "https://i.pravatar.cc/150?img=5", linkedin: "#" },
+    { id: 3, nombre: "Juan De pablo", rol: "Atención al Cliente", foto: "https://i.pravatar.cc/150?img=3", linkedin: "#" }
   ];
 
   return (

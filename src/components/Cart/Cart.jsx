@@ -30,7 +30,7 @@ const Cart = () => {
         ) : (
           <div>
             <h3>El carrito esta vacio</h3>
-            <Link to='/'>Ir a la tienda</Link>
+            <Link to='/productos'>Ir a la tienda</Link>
           </div>
         )
     }

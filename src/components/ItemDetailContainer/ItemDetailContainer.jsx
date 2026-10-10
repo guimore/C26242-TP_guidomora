@@ -2,40 +2,35 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import Spinner from '../Spinner/Spinner';
-import db from '../../services/firebase';
-import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
+  const { id } = useParams();
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [load, setLoad] = useState(true);
 
-    const { id } = useParams();
-    const [selectedItem, setSelectedItem] = useState()   //State donde grabo el item  segun el id
-    const [load, setLoad] = useState(true) //Flag que me permite mostrar un spinner mientras cargo los datos
+  useEffect(() => {
+    setLoad(true);
+    fetch('/data/products.json')
+      .then((res) => {
+        if (!res.ok) throw new Error('Error al cargar productos');
+        return res.json();
+      })
+      .then((data) => {
+        const producto = data.find((p) => p.id === parseInt(id));
+        setSelectedItem(producto);
+        setLoad(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoad(false);
+      });
+  }, [id]);
 
-    const getSelected = async(idItem) =>{
-        try {
-            setLoad(true)
-            const document = doc(db, "Items", idItem)
-            const response = await getDoc(document)
-            const result = {id: response.id, ...response.data()}
-            
-            setSelectedItem(result)
-            setLoad(false)
+  return (
+    <>
+      {load ? <Spinner /> : <ItemDetail item={selectedItem} />}
+    </>
+  );
+};
 
-        } catch (error) {
-            console.log(error)
-        }
-    }
-
-
-    useEffect(() => {
-        getSelected(id)
-    }, [id])
-
-    return (
-        <>
-            {load ? <Spinner /> : <ItemDetail item={selectedItem} />}
-        </>
-    )
-}
-
-export default ItemDetailContainer
+export default ItemDetailContainer;

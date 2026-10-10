@@ -1,4 +1,4 @@
 export const spinnerStyle = {
-    color: '#e4c360',
+    color: '#333333',
     margin: 375
 }

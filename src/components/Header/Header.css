@@ -3,7 +3,7 @@
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #333;
+  color: #222;
 }
 
 .logo-emoji {
@@ -14,9 +14,9 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #222;
 }
 
 .logo-container a:hover .logo-text {
-  color: #667eea;
+  color: #555;
 }

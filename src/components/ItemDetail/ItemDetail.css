@@ -1,11 +1,115 @@
-.detail-wrapper {
-  max-width: 20rem;
-  margin: auto;
+/* ============================================
+   DETALLE DEL PRODUCTO
+   ============================================ */
+
+.detailsStyle {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.detail-wrapper .card p:first-of-type {
-  display: block;
-  overflow: visible;
-  line-clamp: unset;
-  -webkit-box-orient: initial;
+.titleStyle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Contenedor de las dos columnas */
+.detailsStyle .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Columna de la imagen */
+.detailsStyle .col:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_med {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  object-fit: contain;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+/* Columna de la info */
+.detailsStyle .col:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.detailsStyle h3 {
+  font-size: 1.2rem;
+  color: #667eea;
+  margin: 0;
+  font-weight: 600;
+}
+
+.detailsStyle p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.detailsStyle hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Botón "Finalizar compra" */
+.btn_item_count {
+  display: inline-block;
+  background: #d4a843;
+  color: #fff;
+  padding: 0.7rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btn_item_count:hover {
+  background: #b8912f;
+  color: #fff;
+}
+
+/* Contador */
+.detailsStyle .item-count {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detailsStyle .row {
+    grid-template-columns: 1fr;
+  }
+
+  .img_med {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  .titleStyle {
+    font-size: 1.5rem;
+  }
 }

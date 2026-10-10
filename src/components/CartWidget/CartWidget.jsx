@@ -8,10 +8,10 @@ const {getQuantity} = useContext(CartContext)
 
   return (<>
       {
-      <Link to={"/cart"} style={{ backgroundColor: '#e4c360', border: 'none', marginLeft: 16, marginRight: 24 }}>
+      <Link to={"/carrito"} style={{ backgroundColor: '#f3f3f3', border: '1px solid #d3d3d3', borderRadius: 8, marginLeft: 16, marginRight: 24, padding: '4px 8px' }}>
         <img src={cartLogo} alt="cart" width={32} height={32} />
         {
-        getQuantity()>0&&<button style={{ backgroundColor: '#e4c360', border: 'none'}}>{getQuantity()}</button>
+        getQuantity()>0&&<button style={{ backgroundColor: '#e7e7e7', border: '1px solid #cfcfcf', borderRadius: 999, color: '#111' }}>{getQuantity()}</button>
         }
       </Link>
       }

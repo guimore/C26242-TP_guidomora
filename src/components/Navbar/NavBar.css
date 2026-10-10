@@ -1,14 +1,15 @@
 /*NavBar*/
 
 .styleNav {
-    background-color: #e4c360;
-    margin-bottom: 30px
-  };
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 30px;
+  }
   
   .styleLink {
     text-decoration: none;
-    color: #000;
-  };
+    color: #111;
+  }
   
   .logo2{
    height: 20px;
@@ -17,7 +18,7 @@
   }
 
   .title_prin{
-    color: #000;
+    color: #111;
     font-weight: bold;
     font-size: 36px;
     padding-left: 6px;

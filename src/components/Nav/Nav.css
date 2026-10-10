@@ -7,10 +7,11 @@
 .nav-list a {
   font-weight: 500;
   transition: 0.25s;
+  color: #1d1d1d;
 }
 
 .nav-list a:hover {
-  color: var(--primary);
+  color: #555;
 }
 
 .incart {
@@ -25,8 +26,8 @@
 
   border-radius: 50%;
 
-  background: var(--primary);
-  color: white;
+  background: #e4e4e4;
+  color: #111;
 
   font-size: 0.75rem;
   font-weight: bold;

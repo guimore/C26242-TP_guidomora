@@ -9,8 +9,8 @@
   min-height: 400px !important;
   display: flex !important;
   flex-direction: column !important;
-  background: #fff !important;
-  border: 1px solid #e0e0e0 !important;
+  background: #ffffff !important;
+  border: 1px solid #d7d7d7 !important;
   border-radius: 14px !important;
   overflow: hidden !important;
   transition: 0.25s !important;
@@ -20,8 +20,8 @@
 
 .cardStyle:hover {
   transform: translateY(-4px) !important;
-  border-color: #667eea !important;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15) !important;
+  border-color: #9a9a9a !important;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12) !important;
 }
 
 /* Imagen: altura FIJA y recortada */
@@ -32,7 +32,7 @@
   object-position: center !important;
   display: block !important;
   padding: 1rem !important;         /* ← espacio alrededor */
-  background: #f9f9f9 !important;   /* ← fondo claro */
+  background: #f4f4f4 !important;   /* ← fondo claro */
 }
 
 .cardStyle .card-body {
@@ -54,15 +54,15 @@
 .cardStyle .price {
   font-size: 1.3rem !important;
   font-weight: 700 !important;
-  color: #667eea !important;
+  color: #1f1f1f !important;
   margin-bottom: 1rem !important;
 }
 
 .cardStyle .btn_ver_mas {
   margin-top: auto !important;
-  background: #d4a843 !important;
-  color: #fff !important;
-  border: none !important;
+  background: #dfe3e6 !important;
+  color: #111 !important;
+  border: 1px solid #c9ced2 !important;
   padding: 0.6rem 1rem !important;
   border-radius: 8px !important;
   text-decoration: none !important;
@@ -72,6 +72,6 @@
 }
 
 .cardStyle .btn_ver_mas:hover {
-  background: #b8912f !important;
-  color: #fff !important;
+  background: #d0d4d7 !important;
+  color: #111 !important;
 }
