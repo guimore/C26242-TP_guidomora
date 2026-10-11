@@ -4,14 +4,14 @@ import "./Header.css";
 
 export const Header = () => {
   return (
-    <header>
-      <div className="logo-container">
-        <Link to={"/"}>
-          <span className="logo-emoji">🛒</span>
+    <header className="header">
+      <div className="header-container">
+        <Link to={"/"} className="logo">
+          <span className="logo-icon">🛒</span>
           <span className="logo-text">Mi Kiosco</span>
         </Link>
+        <Nav />
       </div>
-      <Nav />
     </header>
   );
 };

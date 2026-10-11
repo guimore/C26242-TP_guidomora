@@ -1,22 +1,66 @@
-.logo-container a {
+/* ============================================
+   HEADER
+   ============================================ */
+
+.header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Logo */
+.logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
-  color: #222;
+  transition: transform 0.2s;
 }
 
-.logo-emoji {
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
   font-size: 2rem;
   line-height: 1;
 }
 
 .logo-text {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #222;
+  white-space: nowrap;
 }
 
-.logo-container a:hover .logo-text {
-  color: #555;
+.logo:hover .logo-text {
+  color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
 }
